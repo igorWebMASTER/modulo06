@@ -5,8 +5,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Hello, world!</Text>
+        <Text style={styles.welcome}>Google Drive</Text>
         <Text style={styles.welcome}></Text>
+        <View style={styles.boxTop}>
+         <Text></Text>
+        </View>
       </View>
     );
   }
@@ -14,14 +17,21 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
    container: {
-     flex: 1,
-     justifyContent: 'center',
-     alignItems: 'center',
      backgroundColor: '#F5FCFF'
    },
    welcome: {
-     fontSize: 20,
-     textAlign: 'center',
-     margin: 10,
+     fontSize: 30,
+     textAlign: 'left',
+     margin: 40,
+     fontFamily: 'Noto Sans',
    },
+   boxTop: {
+     width: 400,
+     height: 200,
+     backgroundColor: 'blue',
+     borderRadius: 10,
+     color: '#fff',
+     alignItems: 'center',
+     justifyContent: 'center',
+  },
 });
