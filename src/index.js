@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 
+import './config/ReactotronConfig';
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#F5FCFF',
@@ -39,6 +41,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
 });
+
+console.tron.warn('Hello World');
 
 export default function App() {
   return (
