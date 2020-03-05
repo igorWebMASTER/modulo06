@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+// import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Container, Form, Input, SubmitButton } from './styles';
 
 export default function Main() {
@@ -12,7 +12,7 @@ export default function Main() {
           placholder="Adicionar usuário"
         />
         <SubmitButton>
-          <Icon name="add" size={20} color="#fff" />
+          {/* <Icon name="add" size={20} color="#fff" /> */}
         </SubmitButton>
       </Form>
     </Container>
