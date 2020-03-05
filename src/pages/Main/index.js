@@ -3,7 +3,7 @@ import { Keyboard } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
 
-import { Container, Form, Input, SubmitButton } from './styles';
+import { FlatList, Container, Form, Input, SubmitButton } from './styles';
 
 export default class Main extends Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -50,6 +50,11 @@ export default class Main extends Component {
             <Icon name="add" size={20} color="#fff" />
           </SubmitButton>
         </Form>
+
+        <List
+           data={users}
+           keyExtractor={user => }
+        />
       </Container>
     );
   }
