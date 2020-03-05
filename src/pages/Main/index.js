@@ -3,7 +3,20 @@ import { Keyboard } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
 
-import { FlatList, Container, Form, Input, SubmitButton } from './styles';
+import {
+  FlatList,
+  Container,
+  Form,
+  Input,
+  SubmitButton,
+  User,
+  List,
+  Avatar,
+  Name,
+  Bio,
+  ProfileButton,
+  ProfileButtonText,
+} from './styles';
 
 export default class Main extends Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -52,8 +65,18 @@ export default class Main extends Component {
         </Form>
 
         <List
-           data={users}
-           keyExtractor={user => }
+          data={users}
+          keyExtractor={user => user.login}
+          renderItem={({ item }) => (
+            <User>
+              <Avatar source={{ uri: item.avatar }} />
+              <Name>{item.name}</Name>
+              <Bio>{item.bio}</Bio>
+              <ProfileButton onPress={() => {}}>
+                <ProfileButtonText>Ver Perfil</ProfileButtonText>
+              </ProfileButton>
+            </User>
+          )}
         />
       </Container>
     );
