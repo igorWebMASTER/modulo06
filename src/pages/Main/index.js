@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Keyboard } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Container, Form, Input, SubmitButton } from './styles';
 import api from '../../services/api';
+
+import { Container, Form, Input, SubmitButton } from './styles';
 
 export default class Main extends Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -12,7 +13,7 @@ export default class Main extends Component {
   };
 
   handleAddUser = async () => {
-    const { users, newUser } = this.setState;
+    const { users, newUser } = this.state;
 
     const response = await api.get(`/users/${newUser}`);
 
