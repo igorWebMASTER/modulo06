@@ -32,11 +32,11 @@
 
 #### 1. Loading de repositórios
 
-Indicator de loading utilizando `<ActivityIndicator />` antes de carregar a lista de repositórios favoritados na tela de detalhes do Usuário.
+Indicator de loading utilizando antes de carregar a lista de repositórios favoritados na tela de detalhes do Usuário.
 
 #### 2. Scroll infinito
 
-Uma funcionalidade de scroll infinito na lista de repositórios favoritados. Assim que o usuário chega nos **20%** do final de lista, busca pelos items na próxima página e adicione na lista. Seu código ficará da seguinte forma:
+Uma funcionalidade de scroll infinito na lista de repositórios favoritados. Assim que o usuário chega nos **20%** do final de lista, busca pelos items na próxima página e adiciona na lista. Seu código ficará da seguinte forma:
 
 #### 3. Pull to Refresh
 
@@ -48,7 +48,7 @@ Uma nova página na aplicação que é acessada quando o usuário clicar em um r
 
 Resultado:
 
-![WebView](.github/exemplo-web-view.png)
+![WebView](wwww.github/exemplo-web-view.png)
 
 ## :memo: Licença
 
