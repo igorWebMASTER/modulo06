@@ -48,7 +48,7 @@ Uma nova página na aplicação que é acessada quando o usuário clicar em um r
 
 Resultado:
 
-![WebView](wwww.github/exemplo-web-view.png)
+![WebView](exemplo-web-view.png)
 
 ## :memo: Licença
 
